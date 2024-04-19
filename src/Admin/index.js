@@ -127,7 +127,6 @@ export default function Admin() {
       }
     } catch (error) {
       console.error("ERRO AO REGISTRAR CARGO", error);
-      toast.error("Ops, erro ao salvar o cargo");
     }
   }
   
@@ -378,7 +377,7 @@ export default function Admin() {
                               <option key={index}>{item.cargo}</option>
                             ))}
                           </select>
-                          <button class="btn btn-outline-secondary" type="button" id="button-addon2" data-bs-toggle="modal" data-bs-target="#cargoModal">Criar</button>
+                          <button class="btn btn-outline-secondary" type="button" id="button-addon2" data-bs-toggle="modal" data-bs-dismiss="modal" data-bs-target="#cargoModal">Criar</button>
                         </div>
                       </div>
                     </div>
@@ -433,7 +432,7 @@ export default function Admin() {
                       <div class="col-sm-4"></div>
                     </div>
                     <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-toggle="modal">Fechar</button>
+                      <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-dismiss="modal">Fechar</button>
 
                       {password !== passwordAgain && (
                         <but class="btn btn-primary">Salvar</but>
@@ -470,7 +469,7 @@ export default function Admin() {
                     </div>
                     <div class="modal-footer">
                       <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">Fechar</button>
-                      <button type="submit" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Salvar</button>
+                      <button type="submit" class="btn btn-primary" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#exampleModal">Salvar</button>
                     </div>
                   </form>
                 </div>
