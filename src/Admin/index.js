@@ -218,6 +218,8 @@ export default function Admin() {
     });
   };
 
+  //Software Product - Atividade contínua 03
+
   async function handleUpdateUser(editingUserId) {
     try {
       await axios.put(`http://localhost:3333/updateuser/${editingUserId}`, {
