@@ -266,7 +266,6 @@ export default function Admin() {
 
               <div class="row">
                 <div class="col-sm-3 mb-2">
-                  <input class="form-control mx-2"/>
                 </div>
               </div>
 
